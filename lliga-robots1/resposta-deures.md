@@ -1,4 +1,5 @@
 # Deures
+![alt text](image.png)
 ## Quants DNF ha posat la jutgessa Núria?
 "4" utilitzant: 
 

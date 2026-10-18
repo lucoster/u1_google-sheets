@@ -9,12 +9,12 @@
 
 **Documentació:** <https://support.google.com/docs/answer/3256550?hl=ca>
 
-**Què fa:** (una o dues frases teves)
+**Què fa:** Compta quantes caselles compleixen una o mes condicions, dins d'un interval.
 
 **Sintaxi:**
 
 ```
-COUNTIFS(...)
+COUNTIFS(interval_de_criteris1, criteri1, [interval_de_criteris2, criteri2, etc.])
 ```
 
 | Argument | Obligatori? | Què és |
@@ -22,7 +22,7 @@ COUNTIFS(...)
 | `...` | Sí | ... |
 | `...` | No | ... |
 
-**Exemple de la documentació:** `...`
+**Exemple de la documentació:** `COUNTIFS(B8:B27, ">" & B12, C8:C27, "<" & C13, D8:D27, “<>10”)`
 
 **El meu exemple amb la lliga:**
 
@@ -38,19 +38,95 @@ Resultat: `...` (què vol dir aquest número?)
 
 ## SUMIFS
 
-(mateixa estructura)
+**Documentació:** https://support.google.com/docs/answer/3238496?hl=ca
+
+**Què fa:** Suma les caselles, dins d'un interval que compleixin una o mes condicions.
+
+**Sintaxi:**
+
+```
+SUMIFS(interval_de_suma, interval_de_criteris1, criteri1, [interval_de_criteris2, criteri2, etc.])
+```
+
+| Argument | Obligatori? | Què és |
+|---|---|---|
+| `...` | Sí | ... |
+| `...` | No | ... |
+
+**Exemple de la documentació:** `SUMIFS(A1:A10, B1:B10, ">20", C1:C10, "<30")`
+
+**El meu exemple amb la lliga:**
+
+```
+=COUNTIFS(...)
+```
+
+Resultat: `...` (què vol dir aquest número?)
+
+**Compte!** (una cosa que diu l'apartat *Notes* de la documentació i que pot fer fallar la fórmula)
 
 ---
 
+
 ## IFS
 
-(mateixa estructura)
+**Documentació:** https://support.google.com/docs/answer/7014145?hl=ca
+
+**Què fa:** Evalua una o mes condicions dins d'un interval i et torna el primer valor cert.
+
+**Sintaxi:**
+
+```
+IFS(condició, valor1, [condició2, valor2, …])
+```
+
+| Argument | Obligatori? | Què és |
+|---|---|---|
+| `...` | Sí | ... |
+| `...` | No | ... |
+
+**Exemple de la documentació:** `IFS(A1:A5 > 3, "més gran", A1:A5 = 3, "igual")`
+
+**El meu exemple amb la lliga:**
+
+```
+=COUNTIFS(...)
+```
+
+Resultat: `...` (què vol dir aquest número?)
+
+**Compte!** (una cosa que diu l'apartat *Notes* de la documentació i que pot fer fallar la fórmula)
 
 ---
 
 ## XLOOKUP
 
-(mateixa estructura)
+**Documentació:** https://support.google.com/docs/answer/3238496?hl=ca
+
+**Què fa:** Busca certa cosa en un interval i et tornal el equivalent en un altre
+
+**Sintaxi:**
+
+```
+XLOOKUP(valor_de_cerca; interval_cerca; interval_de_resultats, valor_no_trobat; mode_de_coincidència; mode_de_cerca)
+```
+
+| Argument | Obligatori? | Què és |
+|---|---|---|
+| `...` | Sí | ... |
+| `...` | No | ... |
+
+**Exemple de la documentació:** `XLOOKUP("Poma"; E2:E7; A2:A7)`
+
+**El meu exemple amb la lliga:**
+
+```
+=COUNTIFS(...)
+```
+
+Resultat: `...` (què vol dir aquest número?)
+
+**Compte!** (una cosa que diu l'apartat *Notes* de la documentació i que pot fer fallar la fórmula)
 
 ---
 
