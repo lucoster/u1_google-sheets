@@ -6,5 +6,5 @@ Escriu la lletra (a, b, c o d) de cada resposta a la columna **Resposta**. Si no
 |----------|----------|
 | 1        |    c      |
 | 2        |     a     |
-| 3        |         |
+| 3        |    d     |
 | 4        |      b     |
